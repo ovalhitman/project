@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+
+    <!-- Pemutar Musik -->
+    <audio autoplay loop>
+        <source src="musik/test.mp3" type="audio/mp3">
+        Browser Anda tidak mendukung pemutar audio.
+    </audio>
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        h2 {
+            color: #f48fb1;
+            margin: 0;
+        }
+
+        p {
+            color: #ad1457;
+            margin: 5px 0 15px;
+            text-align: justify;
+        }
+
+        button {
+            background-color: #b3e5fc;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: auto;
+        }
+
+        button:hover {
+            background-color: #81d4fa;
+        }
+    </style>
+</head>
+<body style="background-image: url(https://png.pngtree.com/background/20220731/original/pngtree-cute-background-shape-picture-image_1911311.jpg);"
+      class="flex justify-center h-screen items-center">
+    <div class="center">
+        <div class="card">
+            <h2>Happy Birthday</h2>
+            <p>jangki bosan bosan sama saya nahh, jangki tinggali ka nahh.</p>
+            <button onclick="window.location.href='page7.html'">Selanjutnya</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
